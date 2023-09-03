@@ -1,5 +1,6 @@
 # ESP32-wireless-game-console-MESH-network
-Play 10 multiplayer (2 people) games without WiFi network.
+
+Play 10 multiplayer (2 people) games without WiFi network. 
 
 Easy to build.
 
@@ -47,72 +48,6 @@ Components
 2x 4.0 TFT SPI 480X320 TFT TOUCH SCREEN
 
 2x 5V battery
-
-Connections
-
-ESP32
-
-ESP32  	5V					>>		+5V batterij
-
-GND(3x)						>>		GND batterij
-
-ESP32		EN(Reset)			>>		TFT RESET
-
-ESP32		2				>>		TFT DC
-
-ESP32		4				>> 		T_CS
-
-ESP32		12				>>		TFT SDO(MISO)
-
-								T_DO
-	
-ESP32		13				>>		TFT SDI(MOSI)
-
-								T_DIN
-	
-ESP32		14				>>		TFT_SCK
-
-								T_CLK
-	
-ESP32		15				>>		TFT CS
-
-ESP32		25				>>		T_IRQ
-
-ESP32		3.3V				>>		TFT LED
-
-
-
-LCD screen
-
-VCC						>>		+5V batterij	(J1 boven U1 NIET sluiten)
-
-GND						>>		GND batterij
-
-CS						>>		ESP32		15
-
-RESET						>>		ESP32 		EN
-
-DC						>>		ESP32		2
-
-SDI(MOSI)					>>		ESP32		13
-
-SCK						>>		ESP32		14
-
-LED						>>		ESP32		+3.3V
-
-SDO(MISO)					>>		ESP32		12
-
-T_CLK						>>		ESP32		14
-
-T_CS						>>		ESP32		15
-
-T_DIN						>>		ESP32		13
-
-T_DO						>>		ESP32		12
-
-T_IRQ						>>		ESP32		25
-
-
 
 
 
